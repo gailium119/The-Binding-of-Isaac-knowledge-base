@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{CF9B48E3-B70A-4035-9BF0-9C2143D6A6BD}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>The_Binding_of_Isaac_knowledge_base</RootNamespace>
+    <AssemblyName>The Binding of Isaac knowledge base</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <PackageCertificateKeyFile>The Binding of Isaac knowledge base_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm|arm64</AppxBundlePlatforms>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BindableBase.cs" />
+    <Compile Include="Common\BooleanNegationConverter.cs" />
+    <Compile Include="Common\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Common\LayoutAwarePage.cs" />
+    <Compile Include="Common\RichTextColumns.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Common\SuspensionManagerException.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TBoI_ItemsPage.xaml.cs">
+      <DependentUpon>TBoI_ItemsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TBoI_MonstersPage.xaml.cs">
+      <DependentUpon>TBoI_MonstersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TBoI_Page1.xaml.cs">
+      <DependentUpon>TBoI_Page1.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\FoneGrounds\2rxyzhe.png" />
+    <Content Include="Assets\FoneGrounds\Bumfriend_IVBag_Polaroid.jpg" />
+    <Content Include="Assets\FoneGrounds\StartPage.1920x1080.jpg" />
+    <Content Include="Assets\FoneGrounds\thebindingofisaac_bosses_wallpaper_by_atrickycarnie-d4mhxfr.png" />
+    <Content Include="Assets\FoneGrounds\Theme_Items.png" />
+    <Content Include="Assets\FoneGrounds\Theme_Monster.png" />
+    <Content Include="Assets\FoneGrounds\the_binding_of_isaac__1__by_shale_skale-d4kwslj.jpg" />
+    <Content Include="Assets\FoneGrounds\the_first__binding_of_isaac_wallpaper_by_cannonfire40-d4idqlx.png" />
+    <Content Include="Assets\Items\Basic %28Pick Ups%29\Bomb.png" />
+    <Content Include="Assets\Items\Basic %28Pick Ups%29\Bomb2.png" />
+    <Content Include="Assets\Items\Basic %28Pick Ups%29\Full_Heart.png" />
+    <Content Include="Assets\Items\Basic %28Pick Ups%29\Half_Heart.png" />
+    <Content Include="Assets\Items\Basic %28Pick Ups%29\Key.png" />
+    <Content Include="Assets\Items\Basic %28Pick Ups%29\Penny.png" />
+    <Content Include="Assets\Items\Basic %28Pick Ups%29\Penny2.png" />
+    <Content Include="Assets\Items\Basic %28Pick Ups%29\Soul_Heart.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\1UP.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\3.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\9Volt.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\A_Lump_Of_Coal.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Battery.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Belt.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Blood_Bag.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Blood_Martyr.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Bobby_Bomb.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Bomb_Bag.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Boom.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Breakfast.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Brimstone.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Brother_Bobby.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Bucket_Of_Lard.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Charm_Vampire.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Chocolate_Milk.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Common_Cold.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Compass.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Cube_2.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Cube_3.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Cube_of_Meat.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Cupids_Arrow.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Dead_Bird.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Demon_Baby.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Dessert.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Dinner.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Distant_Admiration.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Dollar.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Fetus.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Forever_Alone.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Growth_Hormones.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Guardian_Angel.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Guppy.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Halo.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Halo_Flies.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Inner_Eye.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Item_Steven.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Ladder.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Little_CHAD.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Little_Chubby.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Little_Gish.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Little_Steve.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Lokis_Horns.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Lord_Pit.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Lucky_Foot.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Lunch.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Magic_Mushroom.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Magneto.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Mark.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Maxs_Head.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Mini_Mush.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Moms_Contacts.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Moms_Eye.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Moms_Heels.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Moms_Knife.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Moms_Lipstick.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Moms_Underwear.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Money_Power.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Mr_Mega.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\My_Reflection.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Number_One.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Odd_Mushroom_Large.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Odd_Mushroom_Thin.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Ouija_Board.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Pact.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Parasite.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Pentagram.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\PHD.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Quarter.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Raw_Liver.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Relic.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Robo_Baby.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Roid_Rage.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Rosary.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Rotten_Meat.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Sack_of_Pennies.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Sad_Onion.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Sister_Maggy.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Skatole.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Skeleton_Key.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Small_Rock.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Spelunkers_Hat.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Spiders_Bite.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Spoon_Bender.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Steam_Sale.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Super_Bandage.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Technology.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Transcendence.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Treasure_Map.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Virus.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Wafer.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Whore_of_Babylon.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Wiggle_Worm.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Wire_Coat_Hanger.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\Wooden_Spoon.png" />
+    <Content Include="Assets\Items\Characteristics %28Collectable Items%29\XRay_Vision.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Anarchist.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Bean.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Bible.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Bobs_Head.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Book_of_Belial.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Book_of_Revelations.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Book_of_Shadows.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Book_of_Sin.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Dead_Sea_Scrolls.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Deck_of_Cards.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Dice.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Doctors_Remote.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Forget_Me_Now.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Gamekid.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Go_Deeper.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Hourglass.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Kamikaze.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Lemon_Mishap.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Moms_Bottle.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Moms_Bra.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Moms_Pad.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Monster_Manuel.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Monstros_Tooth.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Mr_Boom.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\My_Little_Unicorn.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Nail.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Necronomicon.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Pony.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Poop.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Razor_Blade.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Shears.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Shoop_Da_Whoop.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Tammys_Head.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Teleport.png" />
+    <Content Include="Assets\Items\Reusable items %28Activated Items%29\Yum_Heart.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_0.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_1.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_10.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_11.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_12.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_13.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_14.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_15.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_16.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_17.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_18.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_19.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_2.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_20.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_21.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_3.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_4.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_5.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_6.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_7.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_8.png" />
+    <Content Include="Assets\Items\Taro cards %28Tarot Cards%29\Card_9.png" />
+    <Content Include="Assets\Logo1116x540.png" />
+    <Content Include="Assets\Logo150x150.png" />
+    <Content Include="Assets\Logo270x270.png" />
+    <Content Include="Assets\Logo44x44.png" />
+    <Content Include="Assets\Logo50x50.png" />
+    <Content Include="Assets\Logo54x54.png" />
+    <Content Include="Assets\Logo90x90.png" />
+    <Content Include="Assets\Monsters\mini-Bosa\Envy.png" />
+    <Content Include="Assets\Monsters\mini-Bosa\Gluttony.png" />
+    <Content Include="Assets\Monsters\mini-Bosa\Greed.png" />
+    <Content Include="Assets\Monsters\mini-Bosa\Lust.png" />
+    <Content Include="Assets\Monsters\mini-Bosa\Pride.png" />
+    <Content Include="Assets\Monsters\mini-Bosa\Sloth.png" />
+    <Content Include="Assets\Monsters\mini-Bosa\Wrath.png" />
+    <Content Include="Assets\Monsters\Bosa\Blastocyst.png" />
+    <Content Include="Assets\Monsters\Bosa\Chad.png" />
+    <Content Include="Assets\Monsters\Bosa\Chub.png" />
+    <Content Include="Assets\Monsters\Bosa\Death.png" />
+    <Content Include="Assets\Monsters\Bosa\Duke.png" />
+    <Content Include="Assets\Monsters\Bosa\Fallen.png" />
+    <Content Include="Assets\Monsters\Bosa\Famine.png" />
+    <Content Include="Assets\Monsters\Bosa\Fistula.png" />
+    <Content Include="Assets\Monsters\Bosa\Gemini.png" />
+    <Content Include="Assets\Monsters\Bosa\Gish.png" />
+    <Content Include="Assets\Monsters\Bosa\Gurdy.png" />
+    <Content Include="Assets\Monsters\Bosa\Headless.png" />
+    <Content Include="Assets\Monsters\Bosa\It_Lives.png" />
+    <Content Include="Assets\Monsters\Bosa\Larry.png" />
+    <Content Include="Assets\Monsters\Bosa\Lokii.png" />
+    <Content Include="Assets\Monsters\Bosa\Mom.png" />
+    <Content Include="Assets\Monsters\Bosa\Moms_Heart.png" />
+    <Content Include="Assets\Monsters\Bosa\Monstro.png" />
+    <Content Include="Assets\Monsters\Bosa\Monstro2.png" />
+    <Content Include="Assets\Monsters\Bosa\Peep.png" />
+    <Content Include="Assets\Monsters\Bosa\Pestilence.png" />
+    <Content Include="Assets\Monsters\Bosa\Satan.png" />
+    <Content Include="Assets\Monsters\Bosa\Scolex.png" />
+    <Content Include="Assets\Monsters\Bosa\Steven.png" />
+    <Content Include="Assets\Monsters\Bosa\War.png" />
+    <Content Include="Assets\Monsters\Ordinary\Antipod.png" />
+    <Content Include="Assets\Monsters\Ordinary\Antipod_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Baby.png" />
+    <Content Include="Assets\Monsters\Ordinary\Boil.png" />
+    <Content Include="Assets\Monsters\Ordinary\Boom_Fly.png" />
+    <Content Include="Assets\Monsters\Ordinary\Boom_Fly_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Brain.png" />
+    <Content Include="Assets\Monsters\Ordinary\Charger.png" />
+    <Content Include="Assets\Monsters\Ordinary\Clot.png" />
+    <Content Include="Assets\Monsters\Ordinary\Clotty.png" />
+    <Content Include="Assets\Monsters\Ordinary\Eye.png" />
+    <Content Include="Assets\Monsters\Ordinary\Eye_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Fire_Hopper.png" />
+    <Content Include="Assets\Monsters\Ordinary\Fly.png" />
+    <Content Include="Assets\Monsters\Ordinary\Fly_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Fred.png" />
+    <Content Include="Assets\Monsters\Ordinary\Gaper.png" />
+    <Content Include="Assets\Monsters\Ordinary\Gaper_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Gish_Jr.png" />
+    <Content Include="Assets\Monsters\Ordinary\Globin.png" />
+    <Content Include="Assets\Monsters\Ordinary\Globin_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Gusher.png" />
+    <Content Include="Assets\Monsters\Ordinary\Guts.png" />
+    <Content Include="Assets\Monsters\Ordinary\Hive.png" />
+    <Content Include="Assets\Monsters\Ordinary\Hive_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Hopper.png" />
+    <Content Include="Assets\Monsters\Ordinary\Horf.png" />
+    <Content Include="Assets\Monsters\Ordinary\Host.png" />
+    <Content Include="Assets\Monsters\Ordinary\Host_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Idol.png" />
+    <Content Include="Assets\Monsters\Ordinary\Knight.png" />
+    <Content Include="Assets\Monsters\Ordinary\Knight_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Leaper.png" />
+    <Content Include="Assets\Monsters\Ordinary\Leech.png" />
+    <Content Include="Assets\Monsters\Ordinary\Leech_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Lump.png" />
+    <Content Include="Assets\Monsters\Ordinary\Maggot.png" />
+    <Content Include="Assets\Monsters\Ordinary\Maw.png" />
+    <Content Include="Assets\Monsters\Ordinary\Maw_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\Membrain.png" />
+    <Content Include="Assets\Monsters\Ordinary\Moter.png" />
+    <Content Include="Assets\Monsters\Ordinary\Moter_2.png" />
+    <Content Include="Assets\Monsters\Ordinary\MrMaw.png" />
+    <Content Include="Assets\Monsters\Ordinary\Mulligan.png" />
+    <Content Include="Assets\Monsters\Ordinary\Pacer.png" />
+    <Content Include="Assets\Monsters\Ordinary\Parabite.png" />
+    <Content Include="Assets\Monsters\Ordinary\Pokie.png" />
+    <Content Include="Assets\Monsters\Ordinary\Pooter.png" />
+    <Content Include="Assets\Monsters\Ordinary\Spity.png" />
+    <Content Include="Assets\Monsters\Ordinary\Sucker.png" />
+    <Content Include="Assets\Monsters\Ordinary\Vis.png" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TBoI_ItemsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TBoI_MonstersPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TBoI_Page1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.12</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Binding of Isaac knowledge base_TemporaryKey.pfx" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
