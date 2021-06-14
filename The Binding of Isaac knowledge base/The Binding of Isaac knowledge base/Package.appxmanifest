@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+  <Identity Name="TheBindingofIsaacdatabase" Publisher="CN=Administrator" Version="1.0.0.8" />
+  <Properties>
+    <DisplayName>The Binding of Isaac database</DisplayName>
+    <PublisherDisplayName>Administrator</PublisherDisplayName>
+    <Logo>Assets\Logo90x90.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="The_Binding_of_Isaac_knowledge_base.App">
+      <VisualElements DisplayName="Binding of Isaac" Logo="Assets\Logo150x150.png" SmallLogo="Assets\Logo54x54.png" Description="The Binding of Isaac knowledge base" ForegroundText="light" BackgroundColor="#8B4513" ToastCapable="false">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\Logo1116x540.png" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>
